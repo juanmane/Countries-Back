@@ -46,7 +46,7 @@ const apiToDB = async () => {
 }
 // Syncing all the models at once.
 conn.sync({ force: false }).then(() => {
-  server.listen(3001, async() => {
+  server.listen(port, async() => {
     //await apiToDB();
     console.log(`%s listening at ${port}`); // eslint-disable-line no-console
   });
